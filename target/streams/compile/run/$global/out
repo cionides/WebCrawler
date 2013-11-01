@@ -1,0 +1,36 @@
+[0m[[0minfo[0m] [0mRunning WebCrawler [0m
+[0m[[0mdebug[0m] [0mStarting sandboxed run...[0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/scala-2.10/classes[0m
+[0m[[0mdebug[0m] [0m	/Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/lib/commons-lang3-3.1-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/lib/commons-lang3-3.1-sources.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/lib/commons-lang3-3.1-tests.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/lib/commons-lang3-3.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/lib/htmlcleaner-2.5.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/cionides/.sbt/boot/scala-2.10.0/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/cionides/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2-M1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/cionides/.ivy2/cache/com.typesafe/config/bundles/config-1.0.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/cionides/.ivy2/cache/com.typesafe.akka/akka-remote_2.10/bundles/akka-remote_2.10-2.2-M1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/cionides/.ivy2/cache/io.netty/netty/bundles/netty-3.6.1.Final.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/cionides/.ivy2/cache/com.google.protobuf/protobuf-java/jars/protobuf-java-2.4.1.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/cionides/.ivy2/cache/org.uncommons.maths/uncommons-maths/jars/uncommons-maths-1.2.2a.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main to exit[0m
+[0m[[0mdebug[0m] [0m	Thread run-main exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread WebCrawler-akka.actor.default-dispatcher-8 to exit[0m
+[0m[[0mdebug[0m] [0m	Thread WebCrawler-akka.actor.default-dispatcher-8 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread WebCrawler-akka.actor.default-dispatcher-6 to exit[0m
+[0m[[0mdebug[0m] [0m	Thread WebCrawler-akka.actor.default-dispatcher-6 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread WebCrawler-akka.actor.default-dispatcher-5 to exit[0m
+[0m[[0mdebug[0m] [0m	Thread WebCrawler-akka.actor.default-dispatcher-5 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread WebCrawler-akka.actor.default-dispatcher-4 to exit[0m
+[0m[[0mdebug[0m] [0m	Thread WebCrawler-akka.actor.default-dispatcher-4 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread WebCrawler-scheduler-1 to exit[0m
+[0m[[0mdebug[0m] [0m	Thread WebCrawler-scheduler-1 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread WebCrawler-akka.actor.default-dispatcher-3 to exit[0m
+[0m[[0mdebug[0m] [0m	Thread WebCrawler-akka.actor.default-dispatcher-3 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread WebCrawler-akka.actor.default-dispatcher-7 to exit[0m
+[0m[[0mdebug[0m] [0m	Thread WebCrawler-akka.actor.default-dispatcher-7 exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m
