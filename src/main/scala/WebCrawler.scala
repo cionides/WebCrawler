@@ -8,8 +8,6 @@ import org.htmlcleaner.HtmlCleaner
 import org.apache.commons.lang3.StringEscapeUtils
 import java.net._
 import scala.collection.mutable.HashSet
-import scala.util.matching.Regex
-
 import akka.actor.OneForOneStrategy
 import akka.actor.SupervisorStrategy.Restart
 import akka.actor.SupervisorStrategy.Resume
@@ -18,73 +16,67 @@ import akka.actor.SupervisorStrategy.Stop
 
 class Crawler extends Actor {
 
-  case class StringListHolder(list:List[String])
+  case class LinksHolder(list:List[String])
   
-  var URLMatcher = new Regex("href=\"(http://[^\"]+)\"", "url")
-
-  def findURLs(url : String, matcher : Regex) : List[String] = {
-    (matcher findAllIn Source.fromURL(url).mkString matchData).
-    map(_.group("url")).
-    toList.removeDuplicates
-    }
-    
   def receive = {
-  	case url: String => {
-      System.out.println(url)
-      val URLs = findURLs(url, URLMatcher)
-      val slh = StringListHolder(URLs)
-      slh.list foreach println
-      for(s <- slh.list){
-      	sender ! s     	
-      }
-    }
+    case link: String => 
+      val links: LinksHolder = getLinks(link)   
+      links.list foreach println
+      sender ! links
     
-    case _            => throw new IllegalArgumentException("Expect only string URLs")
+    case _ => throw new Exception("bad url")
   }
-  
-  
+
+  def getLinks(url: String): LinksHolder = {
+    var links = new ListBuffer[String]
+    val cleaner = new HtmlCleaner
+    val rootNode = cleaner.clean(new URL(url))
+    val elements = rootNode.getElementsByName("a", true)
+    
+    for (elem <- elements) {
+      var hrefContent = elem.getAttributeByName("href")
+      
+      if(hrefContent.contains("//")){
+        hrefContent = hrefContent.replace("//", "")
+        hrefContent = "http://" + hrefContent
+      }
+      links += hrefContent
+    }
+    LinksHolder(links.toList)   
+  }
 }
 
-class Supervisor(host: String) extends Actor {
+class Supervisor extends Actor {
  
-  case class StringListHolder(list:List[String])
-
-  val strategy = OneForOneStrategy() {
-    case _: Exception                => Resume
-  }
-  val crawlers = context.actorOf(Props[Crawler].withRouter(
-    RoundRobinRouter(5, supervisorStrategy = strategy)))
-
+  case class LinksHolder(list:List[String])
   var visited = HashSet[String]()
-  
+  val system = ActorSystem("WebCrawler")
+  var instances = Runtime.getRuntime().availableProcessors()
+  val crawler = context.actorOf(Props[Crawler].withRouter(RoundRobinRouter(instances)))
+ 
   def receive = {
-    case url: String => 
-     if (!visited.contains(url)) {
-       visited += url
-       val urlHost = (new java.net.URL(url)).getHost()
-       if (urlHost == host){
-          crawlers ! url
-      	}
-      }
-    case listOfLinks: StringListHolder =>
+    
+  case firstLink: String => 
+      crawler ! firstLink
+  
+  case listOfLinks: LinksHolder =>
       for(link <- listOfLinks.list){
-        crawlers ! link
+        if(!visited.contains(link)){
+          visited.add(link)        
+          crawler ! link
+        }         
       }
   }
     
 }
 
+//Entry point to the application
 object WebCrawler extends App {
   val system = ActorSystem("WebCrawler")
-  val url = "http://www.wikipedia.org/"
-  val host = (new java.net.URL(url)).getHost()
-  val supervisor = system.actorOf(Props(new Supervisor(host)))
+  val supervisor = system.actorOf(Props[Supervisor])
   
-  
-  //first link is sent
-  supervisor ! url
-  
-   Thread.sleep(10000)
-   system.shutdown
+  supervisor ! "http://www.wikipedia.com"
+  Thread.sleep(100)
+  system.shutdown
 
 }

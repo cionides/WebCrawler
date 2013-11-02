@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/}default-74ea50...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/Users/cionides/Desktop/WebCrawler/}default-197ebe...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: web-crawler#web-crawler_2.10;1.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -340,7 +340,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for web-crawler#web-crawler_2.10;1.0 [docs][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for web-crawler#web-crawler_2.10;1.0 [pom][0m
-[0m[[0mdebug[0m] [0m	resolved ivy file produced in /Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/resolution-cache/web-crawler/web-crawler_2.10/1.0/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /Users/cionides/Desktop/WebCrawler/target/resolution-cache/web-crawler/web-crawler_2.10/1.0/resolved.xml.xml[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-actor_2.10;2.2-M1!akka-actor_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.akka#akka-remote_2.10;2.2-M1!akka-remote_2.10.jar(bundle)[0m
@@ -348,18 +348,18 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.netty#netty;3.6.1.Final!netty.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.protobuf#protobuf-java;2.4.1!protobuf-java.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.uncommons.maths#uncommons-maths;1.2.2a!uncommons-maths.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 192ms :: artifacts dl 14ms[0m
-[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 compile produced in /Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 runtime produced in /Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 test produced in /Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 provided produced in /Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 optional produced in /Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 compile-internal produced in /Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 runtime-internal produced in /Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 test-internal produced in /Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 plugin produced in /Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 sources produced in /Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 docs produced in /Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 pom produced in /Users/cionides/Documents/DePaul/Spring_13/CSC536/Homework/HW6/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (192ms resolve - 14ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 177ms :: artifacts dl 15ms[0m
+[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 compile produced in /Users/cionides/Desktop/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 runtime produced in /Users/cionides/Desktop/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 test produced in /Users/cionides/Desktop/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 provided produced in /Users/cionides/Desktop/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 optional produced in /Users/cionides/Desktop/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 compile-internal produced in /Users/cionides/Desktop/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 runtime-internal produced in /Users/cionides/Desktop/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 test-internal produced in /Users/cionides/Desktop/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 plugin produced in /Users/cionides/Desktop/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 sources produced in /Users/cionides/Desktop/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 docs produced in /Users/cionides/Desktop/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for web-crawler#web-crawler_2.10;1.0 pom produced in /Users/cionides/Desktop/WebCrawler/target/resolution-cache/reports/web-crawler-web-crawler_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (177ms resolve - 15ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
