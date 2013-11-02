@@ -76,7 +76,6 @@ object WebCrawler extends App {
   val supervisor = system.actorOf(Props[Supervisor])
   
   supervisor ! "http://www.wikipedia.com"
-  Thread.sleep(100)
-  system.shutdown
+  
 
 }
